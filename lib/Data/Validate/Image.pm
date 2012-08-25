@@ -2,7 +2,7 @@ package Data::Validate::Image;
 use strict;
 use warnings;
 
-our $VERSION = '0.006';
+our $VERSION = '0.007';
 $VERSION = eval $VERSION;
 
 use Image::Info;
@@ -35,7 +35,7 @@ sub validate{
     };
 
     if ( $self->_convert_installed ){ #test if imagemagic is installed
-        my @frames = `convert -identify '${file}' /dev/null 2> /dev/null`;
+        my @frames = `convert -identify '${file}' null: 2> /dev/null`;
 
         $image_info->{'frames'} = scalar( @frames );
         $image_info->{'animated'} = ($#frames) ? 1 : 0;
@@ -128,7 +128,7 @@ L<http://thisaintnews.com>, L<Image::Info>
 
 =head1 LICENSE
 
-Copyright (C) 2011 by n0body L<http://thisaintnews.com/>
+Copyright (C) 2012 by n0body L<http://thisaintnews.com/>
 
 This library is free software, you can redistribute it and/or modify
 it under the same terms as Perl itself.
