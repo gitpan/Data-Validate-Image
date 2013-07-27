@@ -4,11 +4,11 @@ author:
   - 'n0body <n0body@thisaintnews.com>'
 build_requires:
   Cwd: 0
-  ExtUtils::MakeMaker: 6.36
+  ExtUtils::MakeMaker: 6.59
   File::Basename: 0
   Test::More: 0
 configure_requires:
-  ExtUtils::MakeMaker: 6.36
+  ExtUtils::MakeMaker: 6.59
 distribution_type: module
 dynamic_config: 1
 generated_by: 'Module::Install version 1.06'
@@ -24,6 +24,8 @@ no_index:
     - t
 requires:
   Image::Info: 0
+  perl: 5.8.0
 resources:
   license: http://dev.perl.org/licenses/
-version: 0.008
+  repository: https://github.com/n0body-/data-validate-image.git
+version: 0.009
