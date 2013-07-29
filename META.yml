@@ -29,4 +29,4 @@ resources:
   bugtracker: https://github.com/n0body-/data-validate-image/issues
   license: http://dev.perl.org/licenses/
   repository: https://github.com/n0body-/data-validate-image.git
-version: 0.011
+version: 0.012
